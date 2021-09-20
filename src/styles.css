@@ -1,0 +1,86 @@
+body {
+  color: white;
+
+  background: hsl(235, 40%, 20%);
+  background: radial-gradient(
+    circle at 0 0,
+    hsl(235, 40%, 20%) 30%,
+    hsl(235, 40%, 5%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-size: clamp(1rem, calc(1rem + 0.25vw), 2rem);
+}
+
+p {
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 2em 4em;
+
+  background-color: rgba(137, 138, 145, 0.164);
+  border-radius: 0.5em;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+
+  width: 75%;
+  margin: 2rem auto 0;
+
+  font-size: 1.2em;
+  font-family: serif;
+
+  background: none;
+  color: white;
+
+  border: 1px solid white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background: white;
+  color: rgb(15, 18, 40);
+}
+
+.btn:active {
+  background: hsl(233, 100%, 69%);
+  border-color: hsl(233, 100%, 69%);
+}
+
+.confirmation {
+  opacity: 0;
+  margin: 1em auto 0;
+
+  font-size: 0.75em;
+  
+  text-align: center;
+
+  transition: opacity 0.1s ease-in;
+}
+
+.confirmation.confirmed {
+  opacity: 1;
+}
