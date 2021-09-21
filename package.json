@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^3.5.2",
+    "mime": "^2.5.2",
+    "ws": "^8.2.2"
+  }
 }
